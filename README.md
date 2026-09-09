@@ -23,6 +23,10 @@ Semester-long .NET Blazor group project for CSE 325. The team will select the fi
 - GitHub for source control
 - Trello for project planning
 
+## Project Management
+
+- [Trello board](https://trello.com/b/DHl8Xd43/cse-325-group-project)
+
 ## Run Locally
 
 Install the .NET 9 SDK and run:
@@ -40,4 +44,4 @@ Open the local URL displayed in the terminal.
 - [x] Team and meeting information documented.
 - [ ] Final project proposal selected.
 - [ ] Minimum viable product defined.
-- [ ] Product backlog created in Trello.
+- [x] Initial brainstorming board created in Trello.
