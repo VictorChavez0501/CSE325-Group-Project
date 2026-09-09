@@ -12,7 +12,7 @@ Semester-long .NET Blazor group project for CSE 325. The team will select the fi
 ## Weekly Meeting
 
 - **Day:** Wednesday
-- **Time:** 6:00 PM Mountain Time (MST/MDT as applicable)
+- **Time:** 6:00 PM MST (UTC−7)
 - **Location:** To be confirmed by the team
 
 ## Technology Stack
@@ -41,4 +41,3 @@ Open the local URL displayed in the terminal.
 - [ ] Final project proposal selected.
 - [ ] Minimum viable product defined.
 - [ ] Product backlog created in Trello.
-
