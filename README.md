@@ -2,6 +2,8 @@
 
 Semester-long .NET Blazor group project for CSE 325. The team will select the final application proposal at its next weekly meeting; the chosen problem, target audience, and minimum viable product will then be documented here.
 
+**GitHub repository:** https://github.com/VictorChavez0501/CSE325-Group-Project
+
 ## Team Members
 
 - Victor Chavez — Week 02 group leader
