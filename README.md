@@ -1,6 +1,6 @@
 # CSE 325 Group Project
 
-Semester-long .NET Blazor group project for CSE 325. The team will select the final application proposal at its next weekly meeting; the chosen problem, target audience, and minimum viable product will then be documented here.
+Semester-long .NET Blazor group project for CSE 325. The proposed application is **StudySync**, a responsive campus study-group coordinator that helps students discover groups and organize study sessions.
 
 **GitHub repository:** https://github.com/VictorChavez0501/CSE325-Group-Project
 
@@ -28,6 +28,7 @@ Semester-long .NET Blazor group project for CSE 325. The team will select the fi
 ## Project Management
 
 - [Trello board](https://trello.com/b/DHl8Xd43/cse-325-group-project)
+- [Week 03 project proposal](docs/W03-PROJECT-PROPOSAL.md)
 
 ## Run Locally
 
@@ -44,6 +45,6 @@ Open the local URL displayed in the terminal.
 
 - [x] Initial Blazor application created.
 - [x] Team and meeting information documented.
-- [ ] Final project proposal selected.
-- [ ] Minimum viable product defined.
+- [x] Project proposal drafted for group approval.
+- [x] Minimum viable product defined.
 - [x] Initial brainstorming board created in Trello.
