@@ -1,6 +1,6 @@
 # CSE 325 Group Project
 
-Semester-long .NET Blazor group project for CSE 325. The proposed application is **StudySync**, a responsive campus study-group coordinator that helps students discover groups and organize study sessions.
+Semester-long .NET Blazor group project for CSE 325. The selected application is **StudySync**, a responsive campus study-group coordinator that helps students discover groups and organize study sessions.
 
 **GitHub repository:** https://github.com/VictorChavez0501/CSE325-Group-Project
 

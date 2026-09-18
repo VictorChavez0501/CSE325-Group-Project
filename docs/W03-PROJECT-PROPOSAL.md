@@ -15,7 +15,7 @@
 
 The meeting opened with prayer. Team members discussed their challenges and discoveries from this week's .NET and Blazor learning activities, including component organization, routing, data binding, dependency injection, and maintaining a shared project with GitHub. The group also reviewed the five ideas generated during the previous meeting and considered their value, technical complexity, target audiences, and feasibility within one semester.
 
-The proposed selection is **StudySync: Campus Study Group Coordinator**. The team defined a realistic minimum viable product, identified the features that are inside and outside the semester scope, considered the application's data and security requirements, and translated the core features into user stories suitable for the Trello backlog.
+The group selected **StudySync: Campus Study Group Coordinator** as its semester project. The team defined a realistic minimum viable product, identified the features that are inside and outside the semester scope, considered the application's data and security requirements, and translated the core features into user stories suitable for the Trello backlog.
 
 ## Project Title
 
@@ -168,9 +168,8 @@ Both project resources must remain publicly accessible to the instructor. Every 
 - [x] Seven core features written as user actions and user stories.
 - [x] Data, authentication, compatibility, external services, and security considered.
 - [x] GitHub and Trello links included.
-- [ ] Confirm that StudySync is the project selected by the group.
+- [x] StudySync confirmed as the project selected by the group.
 - [ ] Confirm the next group leader.
 - [ ] Add the seven feature cards and user stories to Trello.
 - [ ] Verify that all members have GitHub collaborator access.
 - [ ] Verify that GitHub and Trello are publicly accessible to the instructor.
-
