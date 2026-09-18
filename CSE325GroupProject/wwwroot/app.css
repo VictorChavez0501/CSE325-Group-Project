@@ -1,5 +1,7 @@
 html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: #f8faff;
+    color: #26334d;
+    font-family: Inter, 'Segoe UI', Helvetica, Arial, sans-serif;
 }
 
 a, .btn-link {
