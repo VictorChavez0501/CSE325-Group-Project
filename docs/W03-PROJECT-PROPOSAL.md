@@ -4,7 +4,7 @@
 
 **Meeting time:** Wednesday at 6:00 PM MST (UTC−7)  
 **Week 03 group leader:** Victor Chavez  
-**Next group leader:** [Confirm the name selected by the group]
+**Next group leader:** Stephen
 
 ### Participants
 
@@ -170,6 +170,6 @@ Both project resources must remain publicly accessible to the instructor. Every 
 - [x] GitHub and Trello links included.
 - [x] StudySync confirmed as the project selected by the group.
 - [ ] Confirm the next group leader.
-- [ ] Add the seven feature cards and user stories to Trello.
+- [x] Seven feature cards and user stories added to Trello.
 - [ ] Verify that all members have GitHub collaborator access.
 - [ ] Verify that GitHub and Trello are publicly accessible to the instructor.
