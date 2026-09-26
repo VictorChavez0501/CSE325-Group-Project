@@ -130,6 +130,5 @@ Every implementation card should include a concise description, an owner, accept
 - [x] Trello work-item workflow agreed upon.
 - [x] Each team member assigned a specific task.
 - [x] Risks and planning adjustments documented.
-- [ ] Publish the individual task cards to Trello.
+- [x] Publish the individual task cards to Trello.
 - [ ] Confirm Lucky Ayeni Inyang Eni as the Week 05 group leader.
-
