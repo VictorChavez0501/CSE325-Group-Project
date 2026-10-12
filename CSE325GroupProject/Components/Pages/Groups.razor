@@ -1,0 +1,101 @@
+@page "/groups"
+@rendermode InteractiveServer
+
+<PageTitle>Discover Groups | StudySync</PageTitle>
+
+<section class="groups-hero">
+    <span class="eyebrow">StudySync discovery</span>
+    <h1>Find your study group.</h1>
+    <p>Search by course or topic and filter by meeting format to find a group that fits your schedule.</p>
+</section>
+
+<section class="filters" aria-label="Study group filters">
+    <label>
+        <span>Search</span>
+        <input class="form-control" @bind="searchText" @bind:event="oninput" placeholder="Course, group, topic, or location" />
+    </label>
+    <label>
+        <span>Meeting format</span>
+        <select class="form-select" @bind="selectedFormat">
+            <option value="All">All formats</option>
+            <option value="In person">In person</option>
+            <option value="Online">Online</option>
+            <option value="Hybrid">Hybrid</option>
+        </select>
+    </label>
+</section>
+
+<div class="results-heading" aria-live="polite">
+    <h2>Available groups</h2>
+    <span>@FilteredGroups.Count() result@(FilteredGroups.Count() == 1 ? string.Empty : "s")</span>
+</div>
+
+@if (FilteredGroups.Any())
+{
+    <section class="group-grid">
+        @foreach (var group in FilteredGroups)
+        {
+            <article class="group-card">
+                <div class="card-topline">
+                    <span class="course">@group.Course</span>
+                    <span class="format">@group.Format</span>
+                </div>
+                <h3>@group.Name</h3>
+                <p>@group.Description</p>
+                <dl>
+                    <div><dt>Next session</dt><dd>@group.NextSession</dd></div>
+                    <div><dt>Location</dt><dd>@group.Location</dd></div>
+                    <div><dt>Availability</dt><dd>@group.MemberCount/@group.Capacity members</dd></div>
+                </dl>
+                <button class="btn btn-primary" type="button" disabled="@(group.MemberCount >= group.Capacity)">
+                    @(group.MemberCount >= group.Capacity ? "Group full" : "View group")
+                </button>
+            </article>
+        }
+    </section>
+}
+else
+{
+    <section class="empty-state">
+        <h2>No matching groups</h2>
+        <p>Try a different course, keyword, or meeting format.</p>
+        <button class="btn btn-outline-primary" type="button" @onclick="ClearFilters">Clear filters</button>
+    </section>
+}
+
+@code {
+    private string searchText = string.Empty;
+    private string selectedFormat = "All";
+
+    private readonly List<StudyGroupSummary> groups =
+    [
+        new("CSE 325", "Blazor Builders", "Practice components, forms, and data access for the next assessment.", "In person", "Wednesday · 7:00 PM", "STC 231", 5, 8),
+        new("MATH 221", "Calculus Collaborative", "Review derivatives and work through weekly problem sets together.", "Hybrid", "Thursday · 6:30 PM", "Library 204 / Zoom", 7, 10),
+        new("CSE 210", "Programming with Classes", "Prepare for the final by reviewing encapsulation, inheritance, and polymorphism.", "Online", "Friday · 5:00 PM", "Microsoft Teams", 6, 6),
+        new("CHEM 105", "Chemistry Foundations", "Weekly concept review, practice questions, and lab preparation.", "In person", "Saturday · 10:00 AM", "ROM 118", 3, 8),
+        new("ENG 150", "Academic Writing Lab", "Peer feedback for essays with a focus on structure, evidence, and revision.", "Online", "Monday · 6:00 PM", "Zoom", 4, 7)
+    ];
+
+    private IEnumerable<StudyGroupSummary> FilteredGroups => groups.Where(group =>
+        (selectedFormat == "All" || group.Format == selectedFormat) &&
+        (string.IsNullOrWhiteSpace(searchText) || SearchableText(group).Contains(searchText.Trim(), StringComparison.OrdinalIgnoreCase)));
+
+    private static string SearchableText(StudyGroupSummary group) =>
+        $"{group.Course} {group.Name} {group.Description} {group.Location}";
+
+    private void ClearFilters()
+    {
+        searchText = string.Empty;
+        selectedFormat = "All";
+    }
+
+    private sealed record StudyGroupSummary(
+        string Course,
+        string Name,
+        string Description,
+        string Format,
+        string NextSession,
+        string Location,
+        int MemberCount,
+        int Capacity);
+}

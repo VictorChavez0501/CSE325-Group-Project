@@ -1,0 +1,30 @@
+.groups-hero { max-width: 780px; padding: 3.5rem 0 2rem; }
+.eyebrow { color: #3659b5; font-size: .78rem; font-weight: 750; letter-spacing: .13em; text-transform: uppercase; }
+h1 { margin: .5rem 0 1rem; color: #14213d; font-size: clamp(2.7rem, 7vw, 5rem); font-weight: 780; letter-spacing: -.055em; line-height: .96; }
+.groups-hero p { max-width: 650px; margin: 0; color: #5d6980; font-size: 1.15rem; line-height: 1.7; }
+.filters { display: grid; grid-template-columns: minmax(0, 2fr) minmax(220px, 1fr); gap: 1rem; padding: 1.25rem; border: 1px solid #dfe5f1; border-radius: 1rem; background: #f7f9fd; }
+.filters label { display: grid; gap: .45rem; color: #33415e; font-weight: 700; }
+.results-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin: 2.5rem 0 1rem; }
+.results-heading h2 { margin: 0; color: #14213d; font-size: 1.65rem; }
+.results-heading span { color: #68758d; }
+.group-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; padding-bottom: 4rem; }
+.group-card { display: flex; flex-direction: column; padding: 1.5rem; border: 1px solid #dfe5f1; border-radius: 1rem; background: #fff; box-shadow: 0 12px 30px rgba(23, 40, 76, .06); }
+.card-topline { display: flex; justify-content: space-between; gap: .75rem; align-items: center; }
+.course, .format { display: inline-flex; width: fit-content; padding: .3rem .65rem; border-radius: 999px; font-size: .76rem; font-weight: 750; }
+.course { background: #dfe8ff; color: #29488f; }
+.format { background: #eef1f6; color: #58657d; }
+.group-card h3 { margin: 1.2rem 0 .65rem; color: #1c2b49; }
+.group-card > p { flex: 1; color: #68758d; line-height: 1.6; }
+.group-card dl { margin: .75rem 0 1.25rem; }
+.group-card dl div { display: flex; justify-content: space-between; gap: 1rem; padding: .6rem 0; border-top: 1px solid #edf0f5; }
+.group-card dt { color: #78849a; font-weight: 500; }
+.group-card dd { margin: 0; color: #293754; font-weight: 700; text-align: right; }
+.group-card .btn { align-self: flex-start; }
+.btn-primary { background: #3659b5; border-color: #3659b5; }
+.empty-state { margin-bottom: 4rem; padding: 4rem 1.5rem; border: 1px dashed #b9c5da; border-radius: 1rem; text-align: center; }
+.empty-state h2 { color: #243452; }
+.empty-state p { color: #68758d; }
+
+@media (max-width: 800px) {
+    .filters, .group-grid { grid-template-columns: 1fr; }
+}

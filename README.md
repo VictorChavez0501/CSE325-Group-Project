@@ -31,6 +31,8 @@ Semester-long .NET Blazor group project for CSE 325. The selected application is
 - [Week 03 project proposal](docs/W03-PROJECT-PROPOSAL.md)
 - [Week 04 project checkpoint](docs/W04-PROJECT-CHECKPOINT.md)
 - [Week 05 project checkpoint](docs/W05-PROJECT-CHECKPOINT.md)
+- [Week 06 project checkpoint](docs/W06-PROJECT-CHECKPOINT.md)
+- [Week 07 final submission plan](docs/W07-FINAL-SUBMISSION-PLAN.md)
 - [Contribution workflow](CONTRIBUTING.md)
 
 ## Run Locally
@@ -53,3 +55,4 @@ Open the local URL displayed in the terminal.
 - [x] Initial brainstorming board created in Trello.
 - [x] Week 04 progress and individual assignments documented.
 - [x] Week 05 progress and personal task report documented.
+- [x] Week 06 functional prototype and final preparation plan documented.
